@@ -12,6 +12,12 @@ import static com.zsg.base.BubbleSort.swap;
  * @Description: 选择排序
  * 文字描述：1. 将数组分为2个子集，排序和未排序的，每一轮从未排序的子集中选出最小的元素，放入排序子集
  * 2. 重复以上步骤，直到整个数组有序
+ *
+ * 与冒泡排序相比：
+ * 1. 二者平均时间复杂度都是O(n²)
+ * 2. 选择排序一般要快于冒泡，因为其交换次数少
+ * 3. 如果集合有序度高，冒泡优于选择
+ * 4. 冒泡属于稳定排序，二选择属于不稳定排序
  */
 public class SelectionSort {
     public static void main(String[] args) {
