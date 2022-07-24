@@ -18,7 +18,9 @@ public class BubbleSort {
     private static void bubble(int[] a) {
         for (int j = 0; j < a.length - 1; j++) {
             // 一轮冒泡
-            for (int i = 0; i < a.length - 1; i++) {
+            // 减少内层循环次数
+            for (int i = 0; i < a.length - 1 - j; i++) {
+                System.out.println("比较次数" + i);
                 if (a[i] > a[i + 1]) {
                     swap(a, i, i + 1);
                 }
